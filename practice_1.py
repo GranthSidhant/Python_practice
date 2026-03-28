@@ -1,6 +1,8 @@
-x = input("What's x ");
-y = input("What's y ");
+def main():
+    x = int(input("Enter the value of x: "));
+    print("The square is : ", square(x));
 
-z = int(x) + int(y);
+def square(num):
+    return pow(num, 3);
 
-print(z);
+main();
