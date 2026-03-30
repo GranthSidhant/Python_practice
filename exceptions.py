@@ -1,14 +1,14 @@
 def main():
-    x = get_input()
+    x = get_input("What's value of x? ")
     print(f"x is {x}")
 
-def get_input():
+def get_input(prompt):
     while True:
         try:
-            return int(input("What's value of x? "))
+            return int(input(prompt))
         except ValueError:
-            print("x must be an integer.")
-            pass
+            print("Entered value must be an integer.")
+            # pass
 
 
 main ()
