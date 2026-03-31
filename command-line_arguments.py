@@ -4,10 +4,11 @@ import sys
 
 # python .\command-line_arguments.py Granth
 
+#check for errors 
 if len(sys.argv) < 2:
-    print("Too few arguments")
+    sys.exit("Too few arguments")
 
 elif len(sys.argv) > 2:
-        print("Too many arguments")
+        sys.exit("Too many arguments")
 
-else: print("Hello my name is", sys.argv[1])
+print("Hello my name is", sys.argv[1])
