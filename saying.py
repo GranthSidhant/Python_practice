@@ -9,5 +9,6 @@ def main ():
     hello(name)
     gooodbye(name)  
 
-
-# main()
+if __name__ == "__main__":  
+    main()
+ # only true if this file is being run directly, not imported as a module
