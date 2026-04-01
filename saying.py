@@ -1,0 +1,13 @@
+def hello(name):
+    print(f"Hello, {name}")
+
+def gooodbye(name):
+    print(f"Goodbye, {name}")
+
+def main ():
+    name = input("What is your name? ")
+    hello(name)
+    gooodbye(name)  
+
+
+# main()
