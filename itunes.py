@@ -8,6 +8,6 @@ if len(sys.argv) != 2:
 response = requests.get("https://itunes.apple.com/search?entity=song&limit=10&term=" + sys.argv[1])
 # print(json.dumps(response.json(), indent = 2))
 
-track = response.json()
-for result in track["results"]:
+song_data = response.json()
+for result in song_data["results"]:
     print(result["trackName"])
