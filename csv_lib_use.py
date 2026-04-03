@@ -2,9 +2,9 @@ import csv
 students = []
 #  reading from a csv file using the csv library
 with open("student.csv") as file:
-    reader = csv.reader(file)
+    reader = csv.DictReader(file)
     for row in reader:
-        students.append({"name": row[0], "home": row[1]})
+        students.append({"name": row["name"], "home": row["home"]})
 
 # for student in students:
 for student in sorted(students, key=lambda student: student["name"]):
