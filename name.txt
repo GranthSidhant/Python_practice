@@ -2,4 +2,3 @@ Matt
 Adam 
 Rena 
 David 
-"C:\Program Files\Python314\python.exe" c:/Users/grant/Desktop/Python/Python_practice/names.py 
